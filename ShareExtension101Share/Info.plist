@@ -25,10 +25,15 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>NSExtensionActivationRule</key>
-			<string>TRUEPREDICATE</string>
+            <dict>
+                <key>NSExtensionActivationSupportsWebURLWithMaxCount</key>
+                <integer>1</integer>
+                <key>NSExtensionActivationSupportsText</key>
+                <true/>
+            </dict>
 		</dict>
-		<key>NSExtensionMainStoryboard</key>
-		<string>MainInterface</string>
+		<key>NSExtensionPrincipalClass</key>
+		<string>ShareExtension101Share.ShareViewController</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.share-services</string>
 	</dict>
